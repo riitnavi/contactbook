@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Contact</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td{
+            border: 2px solid black;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn{
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .edit{
+            background-color: orange;
+            color: white;
+        }
+
+        .delete{
+            background-color: red;
+            color: white;
+        }
+
+        .addnew{
+            margin-top: 20px;
+        }
+
+        .addnew button{
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>View Contact.html</h2>
+
+        <table>
+            <tr>
+                <th>Sl No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+            {% for i in data %}
+
+            <tr>
+
+                <td>1</td>
+                <td>Nidhin</td>
+                <td>nidhin@gmail.com</td>
+                <td>9876543210</td>
+            </tr>
+
+            {% endfor %}
+
+            
